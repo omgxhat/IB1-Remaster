@@ -4,7 +4,7 @@
 
 **Infinity Blade (2010), rebuilt for a 2026 iPhone and iPad: full screen, HD, 60 fps, with its original bugs fixed and its lost content restored.**
 
-[![Latest release](https://img.shields.io/badge/latest_release-1.3-2f81f7?style=for-the-badge)](https://github.com/second-light/IB1-Remaster/releases/latest)
+[![Latest release](https://img.shields.io/badge/latest_release-1.4-2f81f7?style=for-the-badge)](https://github.com/second-light/IB1-Remaster/releases/latest)
 ![Platforms](https://img.shields.io/badge/iPhone_%7C_iPad-iOS_26%2B-555?style=for-the-badge&logo=apple)
 ![60 fps](https://img.shields.io/badge/60_fps-HD-555?style=for-the-badge)
 
@@ -22,6 +22,7 @@
 
 | Version | Date | Highlights |
 |---|---|---|
+| **[1.4](https://github.com/second-light/IB1-Remaster/releases/tag/v1.4)** | 6 Nov 2026 | Achievements restored with badges, the 100-chest Jackpot, clearer iPad layouts, a new God King haptic and other fixes |
 | **[1.3](https://github.com/second-light/IB1-Remaster/releases/tag/v1.3)** | 30 Oct 2026 | Feel every blow: haptics on iPhone, smooth skipping through dialogue, a Turn Off Tutorials option, and the way back to the gate fixed |
 | **[1.2](https://github.com/second-light/IB1-Remaster/releases/tag/v1.2)** | 26 Oct 2026 | The biggest update yet: lost 2010 content switched on, HD lighting across the castle, play your own music, and the game on iPad |
 | **[1.1](https://github.com/second-light/IB1-Remaster/releases/tag/v1.1)** | 25 Oct 2026 | Hide The HUD and Hide Combat Text options, every effect in HD, and spells that read your drawing correctly |
@@ -79,7 +80,7 @@ IB1 Remaster starts from the original game (version 1.4.3 with the fan Community
 
 | | |
 |---|---|
-| **Latest release** | [1.3](https://github.com/second-light/IB1-Remaster/releases/latest) (30 October 2026) |
+| **Latest release** | [1.4](https://github.com/second-light/IB1-Remaster/releases/latest) (6 November 2026) |
 | **Runs on** | iPhone and iPad, full screen |
 | **Tested on** | iPhone 17 (iOS 27.0.1) and iPad Air |
 | **Base game** | Infinity Blade 1.4.3 + Community Patch 2.5 (data files unchanged) |
@@ -96,6 +97,13 @@ Download the IPA from the [latest release](https://github.com/second-light/IB1-R
 ---
 
 ## What's new
+
+### Achievements restored
+- **Achievements are back.** Earn achievements on the device without Game Center, with the game's own pop-up and an **ACHIEVEMENTS** list.
+- **A badge for every achievement.** Each of the 64 achievements has its own badge in the list and its unlock box.
+- **Jackpot! unlocks at the 100th chest**, as its description promises.
+- **Four unavailable multiplayer achievements stay visible.** They are marked unavailable and do not count against the 60 achievements that can still be earned (unless already earned).
+- **The achievement list and boxes work on iPad.** Badges stay visible after a screenshot, achievement text clears its buttons, and the achievement box has no dark panel behind the text.
 
 ### Lost content, found
 Chair finished all of this and never switched it on. It's in the game now, exactly where they meant it to be.
@@ -138,8 +146,9 @@ Chair finished all of this and never switched it on. It's in the game now, exact
 - **Only the big moments.** Your own swings, parries, dodges, misses and spells stay quiet.
 - **On by default.** Untick **Haptics** in Options to turn it off. iPhone only, since the iPad has no vibration motor.
 
-### Now on iPad
-- **Full screen on iPad**, the same game as on iPhone, at the iPad's full sharpness and 60 frames per second.
+- **The God King's sword-through haptic.** The game's strongest rumble plays as his blade goes through your knight. Haptics must be on; iPhone only.
+
+### Now on iPad- **Full screen on iPad**, the same game as on iPhone, at the iPad's full sharpness and 60 frames per second.
 - **The opening film and Start button are back.** The original mistook modern iPads for the 2010 model and skipped both.
 - **Everything else carries over:** the same HD graphics and effects, subtitles at the same size, and health numbers sized to sit comfortably at the iPad's edges.
 
@@ -158,6 +167,8 @@ Chair finished all of this and never switched it on. It's in the game now, exact
 - **Larger subtitles**, a hidden status bar and home bar, and a properly placed Start button.
 
 ### Menus and convenience
+- **Menu and fight-screen artwork keeps its intended shape.** Buttons and item pictures are no longer stretched, and panels and edge pieces reach the display cleanly.
+- **No Facebook button on the pause menu.**
 - **Every menu and screen fills the display**, with no black or bright strips at the sides.
 - **Saves appear in the Files app** (On My iPhone → Infinity Blade), so you can back them up without a computer.
 - **The broken gold store is switched off.** It used to hang forever on "Connecting to iTunes". The shop now behaves as designed for builds without a store: BUY only lights up when you can afford something, and spending gold you don't have tells you how much more you need.
@@ -167,6 +178,15 @@ Chair finished all of this and never switched it on. It's in the game now, exact
 ---
 
 ## Bugs fixed
+
+### Added in 1.4
+- **Menu pictures inside lists are positioned correctly.** The menu-widening rule now uses a picture's actual position within its list.
+- **Safer checks for remembered game objects.** The add-on checks that an object still exists before inspecting it.
+- **List taps match the row under your finger.**
+- **Menu and fight-screen artwork keeps its intended shape and reaches the screen edges cleanly.**
+- **The MASTERED pop-up is fixed.** The item keeps its proper shape and the grey ring is gone; the gold bag and chest prize are no longer stretched.
+- **No Live Text button over the start-up film's last frame.**
+- **Pop-up messages clear their buttons on iPhone and iPad.** Long messages get the room they need; the achievement box is easier to read without its dark panel.
 
 ### From the original 2010 game
 These were in the game as released, not caused by modern iPhones.
@@ -330,6 +350,7 @@ Every test build, and which ones became releases.
 | **19** | **25 Oct** | **Hide The HUD and Hide Combat Text options, HD effects, spells read your drawing correctly — released as 1.1** |
 | **20** | **26 Oct** | **Lost content restored, HD lighting, play your own music, iPad support, accurate circle taps, the Faun's intro, no content-pack pop-ups — released as 1.2** |
 | **21** | **30 Oct** | **Haptics, smooth skipping through dialogue, Turn Off Tutorials option, back-to-gate and well fixes, the Infinity Blade fits the Infinity Dias — released as 1.3** |
+| **22** | **6 Nov** | **Achievements restored with badges, Jackpot at 100 chests, iPad achievement layouts, the God King's sword-through haptic, menu and list fixes — released as 1.4** |
 
 </details>
 
