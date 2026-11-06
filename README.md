@@ -22,7 +22,7 @@
 
 | Version | Date | Highlights |
 |---|---|---|
-| **[1.4](https://github.com/second-light/IB1-Remaster/releases/tag/v1.4)** | 6 Nov 2026 | Achievements restored with badges, the 100-chest Jackpot, clearer iPad layouts, a new God King haptic and other fixes |
+| **[1.4](https://github.com/second-light/IB1-Remaster/releases/tag/v1.4)** | 6 Nov 2026 | Achievements restored with badges, iPad-ready achievement screens, a new God King haptic, and menu and touch fixes |
 | **[1.3](https://github.com/second-light/IB1-Remaster/releases/tag/v1.3)** | 30 Oct 2026 | Feel every blow: haptics on iPhone, smooth skipping through dialogue, a Turn Off Tutorials option, and the way back to the gate fixed |
 | **[1.2](https://github.com/second-light/IB1-Remaster/releases/tag/v1.2)** | 26 Oct 2026 | The biggest update yet: lost 2010 content switched on, HD lighting across the castle, play your own music, and the game on iPad |
 | **[1.1](https://github.com/second-light/IB1-Remaster/releases/tag/v1.1)** | 25 Oct 2026 | Hide The HUD and Hide Combat Text options, every effect in HD, and spells that read your drawing correctly |
@@ -99,11 +99,10 @@ Download the IPA from the [latest release](https://github.com/second-light/IB1-R
 ## What's new
 
 ### Achievements restored
-- **Achievements are back.** Earn achievements on the device without Game Center, with the game's own pop-up and an **ACHIEVEMENTS** list.
-- **A badge for every achievement.** Each of the 64 achievements has its own badge in the list and its unlock box.
-- **Jackpot! unlocks at the 100th chest**, as its description promises.
-- **Four unavailable multiplayer achievements stay visible.** They are marked unavailable and do not count against the 60 achievements that can still be earned (unless already earned).
-- **The achievement list and boxes work on iPad.** Badges stay visible after a screenshot, achievement text clears its buttons, and the achievement box has no dark panel behind the text.
+- **Achievements are back.** Earn them on your device without Game Center, with the game's own pop-ups and a list of all 64 achievements.
+- **Every achievement has its own badge.** See each badge in the list and when it unlocks; locked achievements have a grey badge.
+- **Four multiplayer achievements remain visible.** They are marked unavailable and do not count towards the 60 you can earn, unless you have already earned them.
+- **Achievement screens fit iPad too.** The list and unlock pop-ups fit the screen, longer messages have room without covering their buttons, badges stay visible after screenshots, and the pop-up dims the background without a dark panel behind the text.
 
 ### Lost content, found
 Chair finished all of this and never switched it on. It's in the game now, exactly where they meant it to be.
@@ -145,10 +144,10 @@ Chair finished all of this and never switched it on. It's in the game now, exact
 - **The God King hits hardest of all.** You feel his body slam when he makes his offer, the blow that throws you across the room in his last stage, and the crash as he lands.
 - **Only the big moments.** Your own swings, parries, dodges, misses and spells stay quiet.
 - **On by default.** Untick **Haptics** in Options to turn it off. iPhone only, since the iPad has no vibration motor.
+- **Feel the God King's sword go through your knight.** His blade triggers the game's strongest rumble. Haptics must be on; iPhone only.
 
-- **The God King's sword-through haptic.** The game's strongest rumble plays as his blade goes through your knight. Haptics must be on; iPhone only.
-
-### Now on iPad- **Full screen on iPad**, the same game as on iPhone, at the iPad's full sharpness and 60 frames per second.
+### Now on iPad
+- **Full screen on iPad**, the same game as on iPhone, at the iPad's full sharpness and 60 frames per second.
 - **The opening film and Start button are back.** The original mistook modern iPads for the 2010 model and skipped both.
 - **Everything else carries over:** the same HD graphics and effects, subtitles at the same size, and health numbers sized to sit comfortably at the iPad's edges.
 
@@ -161,6 +160,7 @@ Chair finished all of this and never switched it on. It's in the game now, exact
 - **Block button size slider**, under the game's own Dodge Button Size setting. It goes from the original size up to 1.5×, and the shield, its number and its touch area all grow together.
 - **Controls and health bars clear of the Dynamic Island** and the rounded corners.
 - **Accurate taps on glowing circles.** Every glowing circle takes your tap exactly where it's drawn, at save points and in fights.
+- **Taps on lists hit the row under your finger.**
 - **Fast-forward only while held.** It can no longer get stuck and race through later cutscenes.
 - **The skip button works wherever you tap it**, including its bottom half at the screen's edge.
 - **Swiping home no longer swings the camera.**
@@ -178,15 +178,6 @@ Chair finished all of this and never switched it on. It's in the game now, exact
 ---
 
 ## Bugs fixed
-
-### Added in 1.4
-- **Menu pictures inside lists are positioned correctly.** The menu-widening rule now uses a picture's actual position within its list.
-- **Safer checks for remembered game objects.** The add-on checks that an object still exists before inspecting it.
-- **List taps match the row under your finger.**
-- **Menu and fight-screen artwork keeps its intended shape and reaches the screen edges cleanly.**
-- **The MASTERED pop-up is fixed.** The item keeps its proper shape and the grey ring is gone; the gold bag and chest prize are no longer stretched.
-- **No Live Text button over the start-up film's last frame.**
-- **Pop-up messages clear their buttons on iPhone and iPad.** Long messages get the room they need; the achievement box is easier to read without its dark panel.
 
 ### From the original 2010 game
 These were in the game as released, not caused by modern iPhones.
@@ -219,6 +210,8 @@ These were in the game as released, not caused by modern iPhones.
 - Sound cutting out after a half swipe up, Control Centre or a call banner, and effects going permanently silent after a pause.
 - The picture rendered below the screen's native sharpness.
 - The skip button only responding when tapped above its middle.
+- A Live Text button appearing over the last frame of the opening film.
+- Pop-up messages running into buttons, especially on iPad.
 
 ### Other fixes
 - Voices piling on top of each other when skipping through dialogue, and lines restarting from the beginning after the scene had moved on.
@@ -227,6 +220,9 @@ These were in the game as released, not caused by modern iPhones.
 - The knight flashing dark blue for a moment after a scene moved him somewhere new. He's now lit for where he stands.
 - The knight facing the wrong way for a moment when you tap Start.
 - A safety net borrowed from Infinity Blade II, which runs on the same engine: if a waiting boss ever freezes like a statue during his idle animation, he keeps moving.
+- Menu pictures inside lists now stay in the right place when a menu widens to the screen edge.
+- The game checks that a remembered object still exists before using it.
+- The **MASTERED** pop-up's item, gold bag and chest prize keep their shape, and the grey ring is gone.
 
 ---
 
@@ -350,7 +346,7 @@ Every test build, and which ones became releases.
 | **19** | **25 Oct** | **Hide The HUD and Hide Combat Text options, HD effects, spells read your drawing correctly — released as 1.1** |
 | **20** | **26 Oct** | **Lost content restored, HD lighting, play your own music, iPad support, accurate circle taps, the Faun's intro, no content-pack pop-ups — released as 1.2** |
 | **21** | **30 Oct** | **Haptics, smooth skipping through dialogue, Turn Off Tutorials option, back-to-gate and well fixes, the Infinity Blade fits the Infinity Dias — released as 1.3** |
-| **22** | **6 Nov** | **Achievements restored with badges, Jackpot at 100 chests, iPad achievement layouts, the God King's sword-through haptic, menu and list fixes — released as 1.4** |
+| **22** | **6 Nov** | **Achievements restored with badges, iPad achievement screens, the God King's sword-through haptic, menu and list fixes — released as 1.4** |
 
 </details>
 
