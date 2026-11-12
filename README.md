@@ -99,7 +99,7 @@ Download the IPA from the [latest release](https://github.com/second-light/IB1-R
 
 ## Source code
 
-From 1.5, every release includes its source code alongside the IPA, as two zip files:
+The add-on's source code is in this repo, and each release's **Source code** download includes it as it was for that version:
 
 | Folder | What's inside |
 |---|---|
