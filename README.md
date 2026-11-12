@@ -4,11 +4,11 @@
 
 **Infinity Blade (2010), rebuilt for a 2026 iPhone and iPad: full screen, HD, 60 fps, with its original bugs fixed and its lost content restored.**
 
-[![Latest release](https://img.shields.io/badge/latest_release-1.4-2f81f7?style=for-the-badge)](https://github.com/second-light/IB1-Remaster/releases/latest)
+[![Latest release](https://img.shields.io/badge/latest_release-1.5-2f81f7?style=for-the-badge)](https://github.com/second-light/IB1-Remaster/releases/latest)
 ![Platforms](https://img.shields.io/badge/iPhone_%7C_iPad-iOS_26%2B-555?style=for-the-badge&logo=apple)
 ![60 fps](https://img.shields.io/badge/60_fps-HD-555?style=for-the-badge)
 
-**[⬇ Download the latest release](https://github.com/second-light/IB1-Remaster/releases/latest)** · [All releases](https://github.com/second-light/IB1-Remaster/releases) · [Install](#install) · [What's new](#whats-new) · [Bugs fixed](#bugs-fixed)
+**[⬇ Download the latest release](https://github.com/second-light/IB1-Remaster/releases/latest)** · [All releases](https://github.com/second-light/IB1-Remaster/releases) · [Install](#install) · [What's new](#whats-new) · [Bugs fixed](#bugs-fixed) · [Source code](#source-code)
 
 <br>
 
@@ -22,6 +22,7 @@
 
 | Version | Date | Highlights |
 |---|---|---|
+| **[1.5](https://github.com/second-light/IB1-Remaster/releases/tag/v1.5)** | 11 Nov 2026 | An ACHIEVEMENT UNLOCKED banner, no repeat announcements for achievements you've already earned, the original game's colours and a softer glow |
 | **[1.4](https://github.com/second-light/IB1-Remaster/releases/tag/v1.4)** | 6 Nov 2026 | Achievements restored with badges, iPad-ready achievement screens, a new God King haptic, and menu and touch fixes |
 | **[1.3](https://github.com/second-light/IB1-Remaster/releases/tag/v1.3)** | 30 Oct 2026 | Feel every blow: haptics on iPhone, smooth skipping through dialogue, a Turn Off Tutorials option, and the way back to the gate fixed |
 | **[1.2](https://github.com/second-light/IB1-Remaster/releases/tag/v1.2)** | 26 Oct 2026 | The biggest update yet: lost 2010 content switched on, HD lighting across the castle, play your own music, and the game on iPad |
@@ -80,7 +81,7 @@ IB1 Remaster starts from the original game (version 1.4.3 with the fan Community
 
 | | |
 |---|---|
-| **Latest release** | [1.4](https://github.com/second-light/IB1-Remaster/releases/latest) (6 November 2026) |
+| **Latest release** | [1.5](https://github.com/second-light/IB1-Remaster/releases/latest) (11 November 2026) |
 | **Runs on** | iPhone and iPad, full screen |
 | **Tested on** | iPhone 17 (iOS 27.0.1) and iPad Air |
 | **Base game** | Infinity Blade 1.4.3 + Community Patch 2.5 (data files unchanged) |
@@ -96,10 +97,25 @@ Download the IPA from the [latest release](https://github.com/second-light/IB1-R
 
 ---
 
+## Source code
+
+From 1.5, every release includes its source code alongside the IPA, as **`IB1-Remaster-<version>-source.zip`**:
+
+| Folder | What's inside |
+|---|---|
+| **`source/`** | The add-on that makes every change in this list. The game loads it as it starts, and the game's own program is never edited. |
+| **`build/`** | The scripts that patch the game's data files, insert the add-on, and sign the finished app. |
+
+The game's own files aren't included. To build it yourself, you'll need your own copy of Infinity Blade 1.4.3 with the Community Patch 2.5, and an Apple developer account of your own to sign it with.
+
+---
+
 ## What's new
 
 ### Achievements restored
-- **Achievements are back.** Earn them on your device without Game Center, with the game's own pop-ups and a list of all 64 achievements.
+- **Achievements are back.** Earn them on your device without Game Center, with a list of all 64 achievements.
+- **ACHIEVEMENT UNLOCKED.** Earning one slides in a banner under the top of the screen: dark, fading at both ends, with thin gold lines above and below, the achievement's own badge on a gold glow, "ACHIEVEMENT UNLOCKED" in gold, then its name in white and what it was for in orange. It eases in, stays for three seconds and fades out. The developers' own pop-up showed the name small and the description large, with no word "earned", so it read like a hint telling you what to do next. If anything isn't as expected, the game's own pop-up shows instead.
+- **No repeat announcements.** When your save clearly shows you'd already done an achievement, it's counted without a pop-up, instead of announcing itself as new the first time you do it again. The four- and five-hit combos count once you have 200 combos, and the quick kill, the flawless kill and ten kills in one playthrough count from level 20. Feats and endings are still earned in play.
 - **Every achievement has its own badge.** See each badge in the list and when it unlocks; locked achievements have a grey badge.
 - **Four multiplayer achievements remain visible.** They are marked unavailable and do not count towards the 60 you can earn, unless you have already earned them.
 - **Achievement screens fit iPad too.** The list and unlock pop-ups fit the screen, longer messages have room without covering their buttons, badges stay visible after screenshots, and the pop-up dims the background without a dark panel behind the text.
@@ -115,13 +131,13 @@ Chair finished all of this and never switched it on. It's in the game now, exact
 ### Looks
 - **Full screen at full sharpness.** Drawn at the device's native resolution, edge to edge, with no letterboxing or stretching, on iPhone and iPad.
 - **HD lighting across the whole castle.** The original stored light and shadow at 2 bits per pixel, which left green and purple blotches on the stone, speckled edges and smeared outlines. All 161 light maps are cleaned up, keeping the original's mood, with the PC version's finer detail added wherever it matches.
-- **HD textures for the whole game.** About 680 textures replaced with clean versions up to 4096 × 4096. These come from the fan-made HD texture pack where it covers them, and from the PC version's originals elsewhere. Each one is colour-matched to the iPhone original so the look stays the same.
+- **HD textures for the whole game.** About 680 textures replaced with clean versions up to 4096 × 4096. These come from the fan-made HD texture pack where it covers them, and from the PC version's originals elsewhere. Each one keeps the colour of the game's own picture, material by material, so the look is the original game's, just sharper.
 - **HD effects.** Fire, lightning, smoke, glows, the sword slash and the God King's sky are all in HD. Many are rebuilt from the original PC artwork.
 - **Your own gear in HD.** The game builds the knight's swords, shields, armour and helmets into one combined texture while it runs. That texture is now rebuilt from HD pieces.
 - **HD item icons.** All 115 shop and inventory icons enlarged 4×. The 54 weapon icons were redrawn from each weapon's own 3D model and coloured to match the originals.
-- **HD menu lettering** in every language the game supports.
+- **HD menu lettering** in every language the game supports, with smooth lowercase letters traced at their true shape.
 - **PC-style graphics settings.** Full-size textures everywhere (statues and columns had been drawn at a quarter of their detail), smooth texture blending, 4× anti-aliasing and 16× anisotropic filtering, none of which the game had switched on.
-- **Light effects.** Soft bloom on bright areas, a gentle film-style contrast curve and sharpening. These apply to the 3D scene only, never to the menus.
+- **Light effects.** A soft bloom on bright areas, a gentle film-style contrast curve and sharpening, tuned to keep the original game's colours and brightness. The contrast works on brightness alone, so no colour shifts, and the bloom sits tight round the sun as in the original. These apply to the 3D scene only, never to the menus.
 - **Bump and shine maps from the PC version**, 76 of them across the castle, so stone, metal and floors catch the light.
 - **PC-style lens flare.** The sun's flare now fades when your knight, a wall or a chest blocks it, instead of shining straight through.
 - **The original 2010 opening film is back** in HD. It's widened to fill the screen, its lighting is extended into the new side areas, and its judder is smoothed out.
@@ -223,6 +239,11 @@ These were in the game as released, not caused by modern iPhones.
 - Menu pictures inside lists now stay in the right place when a menu widens to the screen edge.
 - The game checks that a remembered object still exists before using it.
 - The **MASTERED** pop-up's item, gold bag and chest prize keep their shape, and the grey ring is gone.
+- **A yellow tint, especially outdoors.** The contrast effect bent red, green and blue separately, which pushed warm colours like sunlit dirt, sandstone and the throne room's gold towards yellow. It now works on brightness alone. *(Fixed in 1.5)*
+- **HD pictures less warm than the game's own.** 291 HD pictures were 15–25% less warm and colourful than the originals, and are now re-toned to match them. *(Fixed in 1.5)*
+- **A hazy glow looking into the sun.** The bloom is now at half strength, the closest to the original game's brightness across 20 views. *(Fixed in 1.5)*
+- **Achievement banner text overlapping.** Letters that drop below the line (g, j, p, q and y) hung into the line underneath, and on iPad the two longest banners ran off the sides of the screen. All 64 now fit cleanly on both devices. *(Fixed in 1.5)*
+- **Jagged edges on lowercase menu lettering.** The game stores its lowercase letters squashed sideways, and the HD lettering had been traced in that squashed state. They're now traced at their true shape. *(Fixed in 1.5)*
 
 ---
 
@@ -298,6 +319,26 @@ These were in the game as released, not caused by modern iPhones.
 **Fixed:** While the knight sets the blade in the pillar, the blade is drawn at three-quarters of its size, giving the same snug fit as Chair's full-size slot and blade. The camera cuts at the exact moments that animation starts and stops, so you never see the blade change size. Nothing else in the game is affected, and the blade is back to full size as soon as the scene moves on.
 </details>
 
+<details>
+<summary><b>8. The yellow tint, and the original game's colours</b></summary>
+
+**Found:** The game looked a bit yellow, especially outside.
+
+**Tracked down:** The contrast effect bent red, green and blue separately, which pushed warm colours towards yellow: the throne room was 15% more yellow than the original. Checking that fix then showed the HD pictures themselves were 15–25% less warm and colourful than the game's own. They had been colour-matched one way per colour channel, which gets a picture's average right but not a picture made of several materials.
+
+**Fixed:** The contrast now works on brightness alone. The HD pictures were re-toned with the method from IB2 Remaster, where each material keeps the game's colour and only the detail is new: all of them were checked against the game's own, and the 291 that were off were corrected, including stone, wood, statues, enemies, your knight's gear, the menus and the item icons. Measured against the original game on the same spots, the throne room now reads 13.7 against the original's 13.8 (15.7 before), and the foot of the courtyard stairs 12.5 against 12.8 (10.9 before). The bloom was also halved, which across 20 views comes closest to the original's brightness.
+</details>
+
+<details>
+<summary><b>9. Achievement banners that collided</b></summary>
+
+**Found:** On iPad, the text on the longer achievements was running into itself.
+
+**Tracked down:** The game measures a line of text only down to the bottom of its capital letters, so letters that drop below the line hung into the line underneath. A check of all 64 achievements on both screens found 46 touching or overlapping on each, not just on iPad. The same check found that the iPad's squarer screen made the two longest banners, "Titan destroyer" and "Knight destroyer", run off both sides.
+
+**Fixed:** The name and description now have room for those letters, and a banner too wide for the screen is drawn a little smaller as a whole (11 of the 64, on iPad only). All 64 now fit cleanly on both devices.
+</details>
+
 ---
 
 ## Under the hood
@@ -307,9 +348,9 @@ These were in the game as released, not caused by modern iPhones.
 | Base game | Infinity Blade 1.4.3 + Community Patch 2.5 (data files unchanged) |
 | Devices | iPhone 17 (iOS 27.0.1) and iPad Air |
 | Resolution | The device's native resolution (2622 × 1206 on iPhone 17), 60 fps |
-| Textures | About 680 in HD, up to 4096 × 4096, plus HD effects |
+| Textures | About 680 in HD, up to 4096 × 4096, in the original game's colours, plus HD effects |
 | Lighting | All 161 light maps rebuilt in HD |
-| Graphics | 4× anti-aliasing, 16× anisotropic filtering, full-size mip levels, bloom, contrast curve, sharpening, bump and shine maps |
+| Graphics | 4× anti-aliasing, 16× anisotropic filtering, full-size mip levels, half-strength bloom, a brightness-only contrast curve, sharpening, bump and shine maps |
 | Sound | 64 mixer voices (was 32); Master, Music, SFX, Voice and Game Sound (My Music) sliders; plays alongside your own music |
 | Haptics | Blocks, hits, boss slams and the God King's blows (iPhone); can be switched off in Options |
 | App size | About 3.1 GB |
@@ -347,6 +388,7 @@ Every test build, and which ones became releases.
 | **20** | **26 Oct** | **Lost content restored, HD lighting, play your own music, iPad support, accurate circle taps, the Faun's intro, no content-pack pop-ups — released as 1.2** |
 | **21** | **30 Oct** | **Haptics, smooth skipping through dialogue, Turn Off Tutorials option, back-to-gate and well fixes, the Infinity Blade fits the Infinity Dias — released as 1.3** |
 | **22** | **6 Nov** | **Achievements restored with badges, iPad achievement screens, the God King's sword-through haptic, menu and list fixes — released as 1.4** |
+| **23** | **11 Nov** | **The ACHIEVEMENT UNLOCKED banner, no repeat announcements, the original game's colours, a softer glow, tidier banners and smoother lettering — released as 1.5** |
 
 </details>
 
