@@ -37,20 +37,32 @@ All taken on an iPhone 17 at its native resolution (2622 × 1206), most with **H
 
 <table>
 <tr>
-<td width="50%"><img src="screenshots/courtyard-flare.jpg" alt="The knight facing a giant in a sunlit courtyard"><br><sub>Sunlight and lens flare in the courtyard</sub></td>
-<td width="50%"><img src="screenshots/castle-gate.jpg" alt="The castle gate"><br><sub>The castle gate, with HD lighting</sub></td>
+<td width="50%"><img src="screenshots/courtyard-sun.jpg" alt="Sunlight in the courtyard"><br><sub>Sunlight in the courtyard</sub></td>
+<td width="50%"><img src="screenshots/angel-statues.jpg" alt="The angel statues"><br><sub>The angel statues</sub></td>
 </tr>
 <tr>
-<td><img src="screenshots/faun-fight.jpg" alt="Facing the Faun"><br><sub>Facing the Faun</sub></td>
-<td><img src="screenshots/golem-fight.jpg" alt="A golden golem"><br><sub>A golden golem, with the HUD on</sub></td>
+<td><img src="screenshots/castle-path.jpg" alt="Outside the castle"><br><sub>Outside the castle</sub></td>
+<td><img src="screenshots/throne-room.jpg" alt="The throne room"><br><sub>The throne room</sub></td>
 </tr>
 <tr>
-<td><img src="screenshots/knight-armour.jpg" alt="The knight's armour in HD"><br><sub>Your own gear, rebuilt in HD</sub></td>
-<td><img src="screenshots/throne-room.jpg" alt="The God King's throne room"><br><sub>The God King's throne room</sub></td>
+<td><img src="screenshots/throne.jpg" alt="The throne"><br><sub>The throne</sub></td>
+<td><img src="screenshots/sacred-chamber.jpg" alt="The sacred chamber"><br><sub>The sacred chamber</sub></td>
 </tr>
 <tr>
-<td><img src="screenshots/bridge.jpg" alt="The bridge"><br><sub>The bridge, home of the restored secret</sub></td>
-<td><img src="screenshots/dungeon-door.jpg" alt="The dungeon door"><br><sub>The dungeon, lit by torchlight</sub></td>
+<td><img src="screenshots/gear-closeup.jpg" alt="Your gear in HD"><br><sub>Your gear in HD</sub></td>
+<td><img src="screenshots/stairwell.jpg" alt="Looking down the stairwell"><br><sub>Looking down the stairwell</sub></td>
+</tr>
+</table>
+
+### Achievements
+
+<img src="screenshots/achievement-unlocked.jpg" alt="The ACHIEVEMENT UNLOCKED banner" width="100%">
+<sub>The ACHIEVEMENT UNLOCKED banner</sub>
+
+<table>
+<tr>
+<td width="50%"><img src="screenshots/achievements-list.jpg" alt="The achievements list"><br><sub>The list, with locked achievements kept secret</sub></td>
+<td width="50%"><img src="screenshots/achievement-earned.jpg" alt="An achievement already earned"><br><sub>An achievement you'd already earned, counted when they came back</sub></td>
 </tr>
 </table>
 
@@ -60,16 +72,6 @@ All taken on an iPhone 17 at its native resolution (2622 × 1206), most with **H
 <img src="screenshots/ipad-throne-room.jpg" alt="The throne room on iPad" width="70%"><br>
 <sub>The throne room on iPad, full screen at 60 fps</sub>
 </p>
-
-### New options
-
-<table>
-<tr>
-<td width="33%"><img src="screenshots/options-sound.jpg" alt="Sound options"><br><sub>Sound, including Game Sound (My Music)</sub></td>
-<td width="33%"><img src="screenshots/options-controls.jpg" alt="Control options"><br><sub>Block Button Size and Hide The HUD</sub></td>
-<td width="33%"><img src="screenshots/options-new.jpg" alt="New options"><br><sub>Hide Combat Text, Turn Off Tutorials and Haptics</sub></td>
-</tr>
-</table>
 
 ---
 
@@ -234,6 +236,14 @@ Chair finished all of this and never switched it on. It's in the game now, exact
 | **Haptics** | Switch | Below Invert Look Axis | On (iPhone only) |
 
 The bug fixes, HD art and full-screen support are always on, since they restore the game rather than change it.
+
+<table>
+<tr>
+<td width="33%"><img src="screenshots/options-volume.jpg" alt="Volume options"><br><sub>The volume sliders</sub></td>
+<td width="33%"><img src="screenshots/options-sliders.jpg" alt="Button size options"><br><sub>Dodge and Block Button Size</sub></td>
+<td width="33%"><img src="screenshots/options-switches.jpg" alt="The switches"><br><sub>The four switches</sub></td>
+</tr>
+</table>
 
 ---
 
