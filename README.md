@@ -8,7 +8,7 @@
 ![Platforms](https://img.shields.io/badge/iPhone_%7C_iPad-iOS_26%2B-555?style=for-the-badge&logo=apple)
 ![60 fps](https://img.shields.io/badge/60_fps-HD-555?style=for-the-badge)
 
-**[⬇ Download the latest release](https://github.com/second-light/IB1-Remaster/releases/latest)** · [All releases](https://github.com/second-light/IB1-Remaster/releases) · [Install](#install) · [What's new](#whats-new) · [Bugs fixed](#bugs-fixed) · [Source code](#source-code)
+**[⬇ Download the latest release](https://github.com/second-light/IB1-Remaster/releases/latest)** · [All releases](https://github.com/second-light/IB1-Remaster/releases) · [Install](#install) · [What's new](#whats-new) · [Options](#options) · [Bugs fixed](#bugs-fixed) · [Source code](#source-code)
 
 <br>
 
@@ -190,6 +190,26 @@ Chair finished all of this and never switched it on. It's in the game now, exact
 - **The broken gold store is switched off.** It used to hang forever on "Connecting to iTunes". The shop now behaves as designed for builds without a store: BUY only lights up when you can afford something, and spending gold you don't have tells you how much more you need.
 - **No more "NEW! CONTENT PACK" pop-ups** one after another when you start the game on a new device.
 - **The end screen shows its Infinity Blade logo again.**
+
+---
+
+## Options
+
+**Everything new is optional.** Every feature that changes how the game looks, sounds or feels can be adjusted or switched off in the game's own Options menu, so you can play it your way or as close to the original as you like.
+
+| Option | Type | Where in Options | Default |
+|---|---|---|---|
+| **Master Volume** | Slider | Above the SFX slider | Full |
+| **Music Volume** | Slider | Above the SFX slider | Full |
+| **Game Sound (My Music)** | Slider | Above the SFX slider | Half: how loud the game's effects and voices are while your own music plays |
+| **Voice Volume** | Slider | Above the SFX slider | Full |
+| **Block Button Size** | Slider | Below Dodge Button Size | The original size (up to 1.5×) |
+| **Hide The HUD** | Switch | Below Invert Look Axis | Off |
+| **Hide Combat Text** | Switch | Below Invert Look Axis | Off |
+| **Turn Off Tutorials** | Switch | Below Invert Look Axis | Off (saved with each character) |
+| **Haptics** | Switch | Below Invert Look Axis | On (iPhone only) |
+
+The bug fixes, HD art and full-screen support are always on, since they restore the game rather than change it.
 
 ---
 
