@@ -1,0 +1,7 @@
+# Info.plist changes for the final build (no test tools)
+Add :UILaunchScreen dict
+Set :UIViewControllerBasedStatusBarAppearance true
+Add :LSSupportsOpeningDocumentsInPlace bool true
+# The iPad (FIXES.md 77): keep the game full screen; iPadOS can otherwise open it in a resizable window, and the game
+# sizes its picture once, at launch. Does nothing on the iPhone.
+Add :UIRequiresFullScreen bool true
