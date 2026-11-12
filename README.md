@@ -109,14 +109,14 @@ IB1 Remaster starts from the original game (version 1.4.3 with the fan Community
 
 - **Install the new IPA over the old one** with Impactor, using the same Apple ID. Your saves and progress carry over.
 - **Don't delete the old app first.** Deleting it deletes its saves.
-- **Back up first, just in case.** Open the **Files** app, go to **On My iPhone** (or **On My iPad**) → **Infinity Blade**, and copy **`swordsave.bin`** somewhere safe.
+- **Back up first, just in case.** Open the **Files** app, go to **On My iPhone** (or **On My iPad**) → **Infinity Blade**, and copy **`SwordSave.bin`** somewhere safe.
 
 ### Bringing a save from the Community Patch
 
 A save from the Community Patch 2.5 should load in IB1 Remaster, since that's the version it's built on.
 
-1. **Copy your save from the Community Patch.** It doesn't show its files in the Files app, so connect your device to a computer and copy **`swordsave.bin`** from the game's **Infinity Blade** folder. Keep a copy somewhere safe.
-2. **Paste it into IB1 Remaster.** Open the **Files** app, go to **On My iPhone** (or **On My iPad**) → **Infinity Blade**, paste **`swordsave.bin`** there and choose to replace the existing file.
+1. **Copy your save from the Community Patch.** It doesn't show its files in the Files app, so connect your device to a computer and copy **`SwordSave.bin`** from the game's **Infinity Blade** folder. Keep a copy somewhere safe.
+2. **Paste it into IB1 Remaster.** Open the **Files** app, go to **On My iPhone** (or **On My iPad**) → **Infinity Blade**, paste **`SwordSave.bin`** there and choose to replace the existing file.
 3. **Open the game,** and your progress is there.
 
 ---
