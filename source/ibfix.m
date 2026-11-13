@@ -39,13 +39,15 @@ void ibfix_log(NSString *line) {
         NSString *path = [DOCUMENTS stringByAppendingPathComponent:@"ibfix.log"];
         NSDictionary *a = [[NSFileManager defaultManager] attributesOfItemAtPath:path error:nil];
         if (!a || [a fileSize] > 2000000) [[NSFileManager defaultManager] createFileAtPath:path contents:nil attributes:nil];
-        fh = [NSFileHandle fileHandleForWritingAtPath:path]; [fh seekToEndOfFile];
+        fh = [NSFileHandle fileHandleForWritingAtPath:path]; [fh seekToEndReturningOffset:nil error:nil];
         df = [NSDateFormatter new]; df.dateFormat = @"HH:mm:ss.SSS";
     });
     NSString *stamp = [df stringFromDate:[NSDate date]];
     dispatch_async(q, ^{
         NSData *d = [[NSString stringWithFormat:@"%@ %@\n", stamp, line] dataUsingEncoding:NSUTF8StringEncoding];
-        [fh writeData:d];
+        // writeData: raises an Objective-C exception (uncaught on this queue: the game quits) when the disk is full or the
+        // file has gone; writeData:error: reports it instead, and a log line that can't be written is simply dropped.
+        if (fh) [fh writeData:d error:nil];
 #ifdef IBFIX_LOGHOST
         // Test builds: also send each line to the Mac (tools/loglisten.py), so a test can be watched live.
         static int sock = -1; static struct sockaddr_in to;
