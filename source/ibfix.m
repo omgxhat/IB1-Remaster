@@ -16,10 +16,6 @@
 #import <stdatomic.h>
 #import <mach-o/dyld.h>
 #import <string.h>
-#import <sys/socket.h>
-#import <netinet/in.h>
-#import <arpa/inet.h>
-#import <fcntl.h>
 #include "ibfix.h"
 
 // Addresses in Infinity Blade 1 v1.4.3 (7982.136), arm64 slice, before ASLR slide.
@@ -48,17 +44,6 @@ void ibfix_log(NSString *line) {
         // writeData: raises an Objective-C exception (uncaught on this queue: the game quits) when the disk is full or the
         // file has gone; writeData:error: reports it instead, and a log line that can't be written is simply dropped.
         if (fh) [fh writeData:d error:nil];
-#ifdef IBFIX_LOGHOST
-        // Test builds: also send each line to the Mac (tools/loglisten.py), so a test can be watched live.
-        static int sock = -1; static struct sockaddr_in to;
-        if (sock < 0) {
-            sock = socket(AF_INET, SOCK_DGRAM, 0);
-            memset(&to, 0, sizeof to); to.sin_family = AF_INET; to.sin_port = htons(IBFIX_LOGPORT);
-            inet_pton(AF_INET, IBFIX_LOGHOST, &to.sin_addr);
-            if (sock >= 0) fcntl(sock, F_SETFL, O_NONBLOCK);
-        }
-        if (sock >= 0) sendto(sock, d.bytes, MIN(d.length, (NSUInteger)1400), 0, (struct sockaddr *)&to, sizeof to);
-#endif
     });
 }
 
