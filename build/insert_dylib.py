@@ -1,6 +1,6 @@
 # insert_dylib.py <thin arm64 macho in> <out> <dylib path as the app will see it>
-# Appends an LC_LOAD_DYLIB command into the header padding. Drops any old signature command
-# (codesign rewrites it anyway).
+# Appends an LC_LOAD_DYLIB command into the header padding. An existing LC_CODE_SIGNATURE command is left as it is,
+# now stale; the build's codesign -f replaces the signature afterwards.
 import struct,sys
 src,dst,path=sys.argv[1],sys.argv[2],sys.argv[3].encode()
 d=bytearray(open(src,'rb').read())
